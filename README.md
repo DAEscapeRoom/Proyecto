@@ -1,6 +1,6 @@
 # Proyecto Undum: Escape room
 Aqui una captura de pantalla de el tablero de trello
-![Trello](/Proyecto/trello.PNG)
+![Trello](/trello.PNG)
 [Enlace a Trello](https://trello.com/b/aRZau6BR/product-backlog)
 ## Historia del juego
 En resumen la historia del juego es que te encuentras en una habitación y tienes que conseguir salir superando una serie de pruebas (puzzles) parecido a la serie de peliculas *SAW*.
