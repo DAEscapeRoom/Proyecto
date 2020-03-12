@@ -29,21 +29,27 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Starting Out with Undum</h1>\
+        "<h1>Escena 1: Comienza el juego</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Welcome to the Undum tutorial. Undum is a tool for writing\
-        hypertext interactive fiction. It has some unique features\
-        and a visual design that encourages narrative games.</p>\
+        <p>Te despiertas desorientado, tu vista esta nublada y parece que te va \
+		la cabeza, no entiendes que haces hay ni cómo has llegado a donde quiera que estes\
+		Tus ojos comienzan a adaptarse a la luz, la niebla que te impedía ver nada\
+		a tu alrededor empieza a disiparse y cuando intentas mover tus manos\
+		te das cuentas que estás sentado, atado de alguna forma a una silla.\
+		Un televisor antiguo puesto en lo que intuyes de una persona pero no\
+		puedes distinguir su cara o alguno de sus rasgos, una silueta.</p>\
         \
-        <p>Hypertext interactive fiction is the digital equivalent of the\
-        Choose Your Own Adventure (CYOA) books that were popular in the\
-        1980s. The story is told in chunks, and you select from a range\
-        of options to move it forward. Unlike the book form, however, the\
-        digital form gives you far more flexibility to tell rich stories\
-        and introduce more interesting game elements.</p>\
+        <p> -Bienvenido al divertido juego del ratón y el queso, tú, amigo mio, eres el ratón\
+		y tu queso será salir de aqui con vida, pero claro no te lo pondré fácil, seguro que \
+		te preguntaras miles de cosas pero con el tiempo las descubrirás,\
+		se un ratón bueno y empieza a buscar tu querido queso.</p>\
         \
-        <p class='transient'>Click <a href='hub'>this link to\
-        continue...</a></p>"
+		<p>Las ataduras que te retenían en la silla se sueltan, la televisión\
+		se apaga y una puerta enfrente de ti se abre, quizás sea hora de ver a\
+		qué se refería con el queso</p>\
+		\
+        <p class='transient'>Ves una puerta. <br><a href='hub'>Salir\
+        por la puerta</a></p>"
     ),
 
     // NB: The 'hub' situation which is the main list of topics, is
@@ -59,48 +65,16 @@ undum.game.situations = {
             system.write($("#s_situations").html());
         },
         tags: ["topic"],
-        optionText: "What Undum Games are Made Of",
+        optionText: "Salir por la puerta",
         displayOrder: 1
     }),
-    todo: new undum.SimpleSituation(
-        "<p>Two things can happen in a situation. The character either\
-        <a href='links'>leaves</a> the situation and enters another one, or\
-        they carry out some <a href='./do-something'>action</a>. Actions may\
-        perform some processing, they may display some results, but\
-        ultimately they put the character back into the same situation\
-        again.</p>\
+    observar: new undum.SimpleSituation(
+        "<p>Escena 2</p>\
         \
-        <p>When you are designing your game, use situations to reflect a\
-        change in what the character can do. So you would change situation if\
-        the character pulls a lever to open a trapdoor, for example. Actions\
-        are intended for situations where the character can examine things\
-        more closely, or maybe top up their magic by drinking a potion.\
-        Things that don't affect the state of the world around them.</p>\
-        \
-        <p>Situations generate content when they are <em>enter</em>ed,\
-        <em>exit</em>ed, and when they receive an <em>act</em>ion (the\
-        italicised words are the names of the three methods that do this).\
-        You can write code to generate content in any way you like, so the\
-        content that is displayed can be totally dynamic: taking into\
-        account the current state of the character.\
-        Content is just plain HTML, so you use regular HTML tags to make\
-        things <strong>bold</strong> or <em>italic</em>, or to include\
-        images. This gives you a lot of flexibility. For example, since Undum\
-        targets HTML5 browsers, you could use the <em>audio</em> or\
-        <em>video</em> tags to include rich media.</p>\
-        \
-        <p class='transient'>Make sure you've carried out the action above,\
-        then <a href='hub'>return to the topic list</a>.</p>",
-        {
-            actions: {
-                'do-something': "<p>You carried out the action, well done.\
-                                 You'll notice that the links for this\
-                                 situation are still active. This means you\
-                                 can click to perform the action again.</p>"
-            }
-        }
+        <p class='transient'>Hacer Hub de las decisiones 2</p>",
+
     ),
-    links: new undum.SimpleSituation(
+   /* links: new undum.SimpleSituation(
         "<p>Between each chunk of new text, Undum inserts a discreet line\
         in the margin. This allows you to see at a glance everything that\
         has been output as a result of your last click.\
@@ -292,34 +266,6 @@ undum.game.situations = {
             }
         }
     ),
-    progress: new undum.SimpleSituation(
-        "<p>Sometimes you want to make the change in a quality into a more\
-        significant event. You can do this by animating the change in\
-        quality. If you <a href='./boost-stamina-action'>boost your\
-        stamina</a>, you will see the stamina change in the normal\
-        way in the character panel. But you will also see a progress\
-        bar appear and animate below.</p>",
-        {
-            tags: ["topic"],
-            heading: "Showing a Progress Bar",
-            displayOrder: 5,
-            actions: {
-                // I'm going indirect here - the link carries out an
-                // action, which then uses doLink to directly change
-                // the situation.  This isn't the recommended way (I
-                // could have just changed situation in the link), but
-                // it illustrates the use of doLink.
-                "boost-stamina-action": function(character, system, action) {
-                    system.doLink("boost-stamina");
-                }
-            },
-            exit: function(character, system, to) {
-                system.animateQuality(
-                    'stamina', character.qualities.stamina+1
-                );
-            }
-        }
-    ),
     "boost-stamina": new undum.SimpleSituation(
         "<p>\
         <img src='media/games/tutorial/woodcut3.png' class='float_right'>\
@@ -434,7 +380,7 @@ undum.game.situations = {
                 );
             }
         }
-    )
+    )*/
 };
 
 // ---------------------------------------------------------------------------
