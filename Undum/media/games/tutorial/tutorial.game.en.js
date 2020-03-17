@@ -69,11 +69,34 @@ undum.game.situations = {
         displayOrder: 1
     }),
     observar: new undum.SimpleSituation(
-        "<p>Escena 2</p>\
+        "<h1>Escena 2: Corre Raton</h1>\
+        <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        <p>Tras pasar la puerta te encuentras en una habitación con una puerta\ \n\
+            por cada pared y encima de cada una de las puertas unos símbolos en\ \n\
+            la parte superior del marco. Tienes un rayo, lo que parece una mujer\ \n\
+            de perfil con los ojos cerrados, una puerta con un círculo en el centro\ \n\
+            y una carita sonriente. Antes de que te dé tiempo a poder observar mejor\ \n\
+            la sala una televisión se enciende en una de sus esquinas, comienza a sonar\ \n\
+            música clásica ya sucederse imágenes de familias felices guerra y varios\ \n\
+            temas que no consigues comprender cómo están relacionados, antes de que digas\ \n\
+            una palabra una voz familiar sale de ese televisor y la imagen de la silueta se \\n\
+            apodera de la pantalla.</p>\
         \
-        <p class='transient'>Hacer Hub de las decisiones 2</p>",
+        <p> -Es hora de elegir ratoncito, cada puerta te llevará a una prueba para conseguir\\n\
+             un fragmento de ese delicioso queso que tanto buscas, da igual el orden que \\n\
+             elijas, hasta que no acabes todas no podrás continuar.</p>\
+        \
+		<p>La imagen de la pantalla desaparece, y ahí estás tú ante otra elección.</p>\
+		\
+        <p class='transient'>Ves tres puertas. <br><a href='hub'>elegir\
+        la puerta de la derecha</a><br><a href='hub'>elegir\
+        la puerta de la izquierda</a><br><a href='hub'>elegir\
+        la puerta del centro</a></p>\
+<p class='transient'>Hacer Hub de las decisiones 2</p>",
 
     ),
+    
+    
    /* links: new undum.SimpleSituation(
         "<p>Between each chunk of new text, Undum inserts a discreet line\
         in the margin. This allows you to see at a glance everything that\
