@@ -117,8 +117,13 @@ undum.game.situations = {
 	"<p>Al seguir los cables hasta su origen ves que están conectados a una baterías en la parte\ \n\
 	trasera del acuario, pero no tienes herramientas para cortar el cable o desmontarlas </p> \ \n\
 	\
-	<p class='transient><a href='electrificado2'>intentas arrancar uno de los cables con tu manos</a><br> \ \n\
+	<p class='transient'><a href='electrificado2'>intentas arrancar uno de los cables con tu manos</a><br> \ \n\
 	<a href='interruptor'>Te fijas en el dispositivo</a><br><a href='derecha'>vuelves frente al acuario</a></p>"
+	),
+	electrificado2: new undum.SimpleSituation(
+	"<p> Te sigues sin enterar que la electricidad no es tu aliada <br></p> \ \n\
+		\
+	<p class='transient'><a href='cables'> seguir pensando</a></p>"
 	),
 	
     
