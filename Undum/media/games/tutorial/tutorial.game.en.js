@@ -132,6 +132,13 @@ undum.game.situations = {
 	<br><p class='transient'><a href='final3'>Usar el interruptor</a><br> \ \n\
 	<a href='final3'>Coger los alicates y cortar los cables</a>"
 	),
+	final3: new undum.SimpleSituation(
+	"<p> Has conseguido cortar la corriente que te impide coger la caja del acuario \ \n\
+	Tras cogerla y abrirla en el interior, ves un fragmento de algún tipo de simbolo, es la \ \n\
+	llave de tu libertad.(Consigues un fragmento del puzle final para escapar.<br></p> \ \n\
+	\
+	<p class='transient'><a href='observar'>volver a la sala de las puertas</a></p>"
+	),
 	
     
 
