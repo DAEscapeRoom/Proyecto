@@ -129,3 +129,6 @@ Salida (Cuando se tenga los dos fragmentos se activa esta escena)
 
 Ahora puedes salir, te acercas a la puerta, colocas los fragmentos en la hendidura y la puerta comienza a abrirse.
 
+# Sprint 1
+
+### Product owner: Rafael Chacón Pérez
