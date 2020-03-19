@@ -88,52 +88,39 @@ undum.game.situations = {
         \
 		<p>La imagen de la pantalla desaparece, y ahí estás tú ante otra elección.</p>\
 		\
-        <p class='transient'>Ves tres puertas. <br><a href='hub'>elegir\
-        la puerta de la derecha</a><br><a href='hub'>elegir\
+        <p class='transient'>Ves tres puertas. <br><a href='derecha'>elegir\
+        la puerta de la derecha</a><br><a href='izquierda'>elegir\
         la puerta de la izquierda</a><br><a href='hub'>elegir\
         la puerta del centro</a></p>\
 <p class='transient'>Hacer Hub de las decisiones 2</p>",
 
     ),
-    
-    
-   /* links: new undum.SimpleSituation(
-        "<p>Between each chunk of new text, Undum inserts a discreet line\
-        in the margin. This allows you to see at a glance everything that\
-        has been output as a result of your last click.\
-        It is particularly useful for small devices, or when\
-        lots of content has appeared. The window also scrolls so the start\
-        of the new content is as near to the top of the window as possible.\
-        This is also designed to help you read more naturally.</p>\
-        \
-        <p>If you've been watching carefully, you will have noticed that\
-        parts of the text have been disappearing when you move between\
-        situations. This isn't a bug! One of the aims of Undum is to give\
-        game designers the ability to make the transcript of\
-        the game read as a coherent piece of narrative. However, you often\
-        need chunks of text that do nothing but offer the reader choices.\
-        Undum defines a special CSS class to add to your HTML for this\
-        (remember generated content is just HTML). It is <em>transient</em>,\
-        and can be applied to paragraphs, <em>div</em>s, or just\
-        <em>span</em>s<span class='transient'> (such as this one)</span>.</p>\
-        \
-        <p>You may also have noticed that, when you move situations, all the\
-        links in the previous situation turn into regular text. This is to\
-        stop you backtracking and trying previous options when you've already\
-        committed to one. In other H-IF systems, this is\
-        done by completely removing the content from previous pages.\
-        That prevents you going back and reading your story, however.</p>\
-        \
-        <p class='transient'>The 'Different Kinds of Links' topic has more\
-        about these links.\
-        Let's return to the <a href='hub'>topic list</a>.</p>",
-        {
-            heading: "Disappearing Content",
-            diplayOrder: 2,
-            tags: ["topic"]
-        }
+     derecha: new undum.SimpleSituation(
+        "<p>decides pasar la puerta de la derecha, te acercas a ella y se va\ \n\
+		abriendo cada vez mÃ¡s por cada paso que das.En su interior ves un acuario, pero tiene\ \n\
+		algo raro, unos cables van desde las paredes hasta el. En el interior del acuario puedes ver\ \n\
+		una caja, con un simbolo de queso donde deberÃ­a de estar el ojo de la cerradura\ \n\
+		,ya has encontrado tu queso, ahora solo tienes que cogerlo.</p>\ \n\
+			\
+		<p class='transient'><a href='electrificado'>meter la mano directamente para intentar sacar la caja\ \n\
+		</a>.<br><a href='cables'>Observas la habitaciï¿½n en busca del origen de los cables</a><br>\ \n\
+		<a href='observar'>volver a la habitaciï¿½n anterior</a></p>"
+	
     ),
-    sticky: new undum.SimpleSituation(
+	electrificado: new undum.SimpleSituation(
+	"<p>Te acercas muy bravucon al agua y metes tu mano, siente como la electricidad \ \n\
+	te recorre el cuerpo y vuelves atras con el rabo entre las piernas</p><br>\ \n\
+	\
+	<p class='transient'><a href='derecha'>vuelves a pensar una idea.</p>"
+	),
+	cables: new undum.SimpleSituation(
+	"<p>cables</p>"
+	),
+	
+    
+
+
+    /*sticky: new undum.SimpleSituation(
         "<p>There are three types of link in Undum. The first two we've seen\
         in previous topics:\
         links to change situation and links to carry out an action. When you\
