@@ -90,7 +90,7 @@ undum.game.situations = {
 		\
         <p class='transient'>Ves tres puertas. <br><a href='derecha'>elegir\
         la puerta de la derecha</a><br><a href='izquierda'>elegir\
-        la puerta de la izquierda</a><br><a href='hub'>elegir\
+        la puerta de la izquierda</a><br><a href='centro'>elegir\
         la puerta del centro</a></p>\
 <p class='transient'>Hacer Hub de las decisiones 2</p>",
 
@@ -105,6 +105,28 @@ undum.game.situations = {
 		<p class='transient'><a href='electrificado'>meter la mano directamente para intentar sacar la caja\ \n\
 		</a>.<br><a href='cables'>Observas la habitaci�n en busca del origen de los cables</a><br>\ \n\
 		<a href='observar'>volver a la habitaci�n anterior</a></p>"
+	
+    ),
+	izquierda: new undum.SimpleSituation(
+        "<p>Decides pasar la puerta de la izquierda, te encuentras en una \ \n\
+		sala vacía, lo único que puedes hacer es volver atras.\ \n\</p>\ \n\
+			\
+		<p class='transient'><br>\ \n\
+		<a href='observar'>volver a la habitaci�n anterior</a></p>"
+	
+    ),
+	centro: new undum.SimpleSituation(
+        "<p>Decides pasar la puerta de la centro, te encuentras en una \ \n\
+		sala vacía, lo único que puedes hacer es volver atras.\ \n\</p>\ \n\
+			\
+		<p class='transient'><br>\ \n\
+		<a href='observar'>volver a la habitaci�n anterior</a></p>"
+	
+    ),
+	salidafinal: new undum.SimpleSituation(
+        "<p>Con la llave que has entontrado abres la puerta.\ \n\
+		Consigues escapar de ese infierno.\ \n\</p>\ \n\
+			"
 	
     ),
 	electrificado: new undum.SimpleSituation(
@@ -137,7 +159,7 @@ undum.game.situations = {
 	Tras cogerla y abrirla en el interior, ves un fragmento de algún tipo de simbolo, es la \ \n\
 	llave de tu libertad.(Consigues un fragmento del puzle final para escapar.<br></p> \ \n\
 	\
-	<p class='transient'><a href='observar'>volver a la sala de las puertas</a></p>"
+	<p class='transient'><a href='salidafinal'>abres la puerta</a></p>"
 	),
 	
     
@@ -225,15 +247,15 @@ undum.game.situations = {
         eyes on the character panel. You'll notice I'll give you a boost to\
         your stamina quality. This process is animated and highlighted to\
         draw your attention to it. You could also get a boost of skill\
-        by carrying out <a href='./skill-boost'>this action</a> as many\
+        by carrying out <a href='./piezas-boost'>this action</a> as many\
         times as you like.</p>",
         {
             heading: "Qualities and the Character",
             tags: ["topic"],
             displayOrder: 4,
             actions: {
-                "skill-boost": function(character, system, action) {
-                    system.setQuality("skill", character.qualities.skill+1);
+                "piezas-boost": function(character, system, action) {
+                    system.setQuality("piezas", character.qualities.piezas+1);
                 }
             },
             exit: function(character, system, to) {
@@ -425,23 +447,16 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    skill: new undum.IntegerQuality(
-        "Skill", {priority:"0001", group:'stats'}
+    piezas: new undum.IntegerQuality(
+        "Piezas de llave", {priority:"0001", group:'stats'}
     ),
     stamina: new undum.NumericQuality(
-        "Stamina", {priority:"0002", group:'stats'}
-    ),
-    luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
-        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
-        {priority:"0003", group:'stats'}
+        "Antorchas", {priority:"0002", group:'stats'}
+    ), 
+	salud: new undum.NumericQuality(
+        "Salud", {priority:"0003", group:'stats'}
     ),
 
-    inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
-    ),
-    novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
-    )
 };
 
 // ---------------------------------------------------------------------------
@@ -459,10 +474,7 @@ undum.game.qualityGroups = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.skill = 12;
-    character.qualities.stamina = 12;
-    character.qualities.luck = 0;
-    character.qualities.novice = 1;
-    character.qualities.inspiration = 0;
-    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
+    character.qualities.piezas = 0;
+    character.qualities.stamina = 0;
+    character.qualities.salud = 100;
 };
