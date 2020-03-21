@@ -132,3 +132,33 @@ Ahora puedes salir, te acercas a la puerta, colocas los fragmentos en la hendidu
 # Sprint 1
 
 ### Product owner: Rafael Chacón Pérez
+
+#### Product backlog refinement
+
+En esta sesión decidimos incluir el requisito de modificar el css en el sprint del proyecto
+
+#### Así es como queda el sprint backlog tras el primer sprint
+![Trello sprint 1](/trellosprint1.PNG)
+
+Enlace al tablero del sprint nº1:
+[Enlace a Trello](https://trello.com/b/pdgmpEVk/tareas-sprint-1)
+
+#### Resultados del sprint retrospective/review
+##### Dialy scrum
+
+Hemos intentado hacer dialy scrums el maximo número de dias posible pero algunos dias nos ha sido completamente imposible, aun así los días que no hemos podido hacer reunion nos hemos comunicado con nuestros problemas mediante otros métodos.
+
+Las reuniones no han durado más de lo que deberian y se han tratado los temas convenientes en una reunion de este tipo
+##### Organización
+
+La organización empezo bien, comenzamos asignandonos tareas del srpint backlog, pero con el avanze del sprint acabamos no asignandonos las tareas en trello, simplemente nos ibamos comunicando lo que ibamos haciendo, en ese sentido debemos de mejorar mucho
+
+##### Cumplimiento del sprint 
+
+En cuanto a la cantidad de tareas soluconadas en el sprint nos pasamos un poco, porque queríamos dejar listo mas de lo que pudimos y al final hemos tenido que dejar algunas tareas que nos han parecido menos importancia, por la falta de tiempo.
+
+##### Aspectos a mejorar
+
+Tomar mejores decisiones a la hora de coger las tareas del sprint, intentar hacer las daily scrum, ademas de asignarnos las tareas utilizando trello para poder mirar en cada momento lo que estamos haciendo.
+
+
