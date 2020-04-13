@@ -133,7 +133,12 @@ undum.game.situations = {
 	"<p>Te acercas muy bravucon al agua y metes tu mano, siente como la electricidad \ \n\
 	te recorre el cuerpo y vuelves atras con el rabo entre las piernas</p><br>\ \n\
 	\
-	<p class='transient'><a href='derecha'>vuelves a pensar una idea.</p>"
+	<p class='transient'><a href='derecha'>vuelves a pensar una idea.</p>",
+		{
+            exit: function(character, system, to) {
+                system.setQuality("salud", character.qualities.salud-10);
+            }
+        }
 	),
 	cables: new undum.SimpleSituation(
 	"<p>Al seguir los cables hasta su origen ves que están conectados a una baterías en la parte\ \n\
@@ -153,14 +158,19 @@ undum.game.situations = {
 	electrificado2: new undum.SimpleSituation(
 	"<p> Te sigues sin enterar que la electricidad no es tu aliada <br></p> \ \n\
 		\
-	<p class='transient'><a href='cables'> seguir pensando</a></p>"
+	<p class='transient'><a href='cables'> seguir pensando</a></p>",
+		{
+            exit: function(character, system, to) {
+                system.setQuality("salud", character.qualities.salud-10);
+            }
+        }
 	),
 	interruptor: new undum.SimpleSituation(
 	"<p>Te das cuenta que entre las baterías hay un pequeño interruptor  \ \n\
 	, hay algo extraño en esta situación pero parece que la suerte acaba de sonreirte.</p> \ \n\
 	\
-	<br><p class='transient'><a href='electrificado2'>Usar el interruptor</a><br> \ \n\
-	<a href='./cortar'>cortar los cables</a>",
+	<br><p class='transient'><a href='./cortar'>Usar el interruptor</a><br> \ \n\
+	",
 	{	
 	actions:{
 		cortar:function(character,system,action){
@@ -173,20 +183,17 @@ undum.game.situations = {
 	},
 	}
 	),
-	final3: new undum.SimpleSituation(
-
+		final3: new undum.SimpleSituation(
 	"<p> Has conseguido cortar la corriente que te impide coger la caja del acuario \ \n\
 	Tras cogerla y abrirla en el interior, ves un fragmento de algún tipo de simbolo, es la \ \n\
-	llave de tu libertad.<a href='./fragmento' class='once'>(Consigues un fragmento del puzle final para escapar)</a>.<br></p> \ \n\
+	llave de tu libertad.(Consigues un fragmento del puzle final para escapar).<br></p> \ \n\
 	\
-	<p class='transient'><a href='observar'>volver a la zona de las puertas.</a></p>",
-	{
-	        actions: {
-                fragmento: function(character, system, action) {
-                    system.setQuality("piezas", character.qualities.piezas+1);
-                }
-            },
-	}
+	<p class='transient'><a href='salidafinal'>abres la puerta</a></p>",
+		{
+            exit: function(character, system, to) {
+                system.setQuality("piezas", character.qualities.piezas+1);
+            }
+        }
 	),
 	
 	
