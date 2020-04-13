@@ -88,7 +88,7 @@ undum.game.situations = {
         \
 		<p>La imagen de la pantalla desaparece, y ah� est�s t� ante otra elecci�n.</p>\
 		\
-        <p class='transient'>Ves tres puertas. <br><a href='derecha'>elegir\
+        <p class='transient'>Ves tres puertas. <br><a href='derecha' class='once'>elegir\
         la puerta de la derecha</a><br><a href='izquierda'>elegir\
         la puerta de la izquierda</a><br><a href='centro'>elegir\
         la puerta del centro</a></p>\
@@ -137,10 +137,18 @@ undum.game.situations = {
 	),
 	cables: new undum.SimpleSituation(
 	"<p>Al seguir los cables hasta su origen ves que están conectados a una baterías en la parte\ \n\
-	trasera del acuario, pero no tienes herramientas para cortar el cable o desmontarlas<br> </p> \ \n\
+	trasera del acuario, pero no tienes herramientas para cortar el cable pero ves unos <a href='./alicates' class='once'>alicates</a>.<br> </p> \ \n\
 	\
 	<p class='transient'><a href='electrificado2'>intentas arrancar uno de los cables con tu manos</a><br> \ \n\
-	<a href='interruptor'>Te fijas en el dispositivo</a><br><a href='derecha'>vuelves frente al acuario</a></p>"
+	<a href='interruptor'>Te fijas en el dispositivo</a><br><a href='derecha'>vuelves frente al acuario</a></p>",
+	    {
+
+            actions: {
+                "alicates": function(character, system, action) {
+                    system.setQuality("alicates", true);
+                }
+            },
+        }
 	),
 	electrificado2: new undum.SimpleSituation(
 	"<p> Te sigues sin enterar que la electricidad no es tu aliada <br></p> \ \n\
@@ -148,19 +156,39 @@ undum.game.situations = {
 	<p class='transient'><a href='cables'> seguir pensando</a></p>"
 	),
 	interruptor: new undum.SimpleSituation(
-	"<p>Te das cuenta que entre las baterías hay un pequeño interruptor y al lado unos alicates \ \n\
+	"<p>Te das cuenta que entre las baterías hay un pequeño interruptor  \ \n\
 	, hay algo extraño en esta situación pero parece que la suerte acaba de sonreirte.</p> \ \n\
 	\
-	<br><p class='transient'><a href='final3'>Usar el interruptor</a><br> \ \n\
-	<a href='final3'>Coger los alicates y cortar los cables</a>"
+	<br><p class='transient'><a href='electrificado2'>Usar el interruptor</a><br> \ \n\
+	<a href='./cortar'>cortar los cables</a>",
+	{	
+	actions:{
+		cortar:function(character,system,action){
+			if(character.qualities.alicates == true){
+				system.write("<p class='transient'><a href='final3'>cortar los cables y pulsar el interruptor</a></p>");
+			}else{
+			system.write("<p class='transient'><a href='electrificado2'> no puedes cortar los cables sin unos alicates</a></p>");
+			}
+		}
+	},
+	}
 	),
 	final3: new undum.SimpleSituation(
+
 	"<p> Has conseguido cortar la corriente que te impide coger la caja del acuario \ \n\
 	Tras cogerla y abrirla en el interior, ves un fragmento de algún tipo de simbolo, es la \ \n\
-	llave de tu libertad.(Consigues un fragmento del puzle final para escapar.<br></p> \ \n\
+	llave de tu libertad.<a href='./fragmento' class='once'>(Consigues un fragmento del puzle final para escapar)</a>.<br></p> \ \n\
 	\
-	<p class='transient'><a href='salidafinal'>abres la puerta</a></p>"
+	<p class='transient'><a href='observar'>volver a la zona de las puertas.</a></p>",
+	{
+	        actions: {
+                fragmento: function(character, system, action) {
+                    system.setQuality("piezas", character.qualities.piezas+1);
+                }
+            },
+	}
 	),
+	
 	
     
 
@@ -447,8 +475,8 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    piezas: new undum.IntegerQuality(
-        "Piezas de llave", {priority:"0001", group:'stats'}
+    piezas: new undum.NumericQuality(
+        "Piezas de llave", {priority:"0001", group:'inventario'}
     ),
     stamina: new undum.NumericQuality(
         "Antorchas", {priority:"0002", group:'stats'}
@@ -456,6 +484,10 @@ undum.game.qualities = {
 	salud: new undum.NumericQuality(
         "Salud", {priority:"0003", group:'stats'}
     ),
+	alicates: new undum.OnOffQuality(
+		"Alicates", {priority:"0004", group:'inventario', onDisplay:"✓"}
+	),
+	
 
 };
 
@@ -467,14 +499,16 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-    progress: new undum.QualityGroup('Progress', {priority:"0002"})
+    progress: new undum.QualityGroup('Progress', {priority:"0002"}),
+	inventario: new undum.QualityGroup('Inventario',{priority:"0003"})
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.piezas = 0;
+    system.setQuality("alicates",false);
+	character.qualities.piezas = 0;
     character.qualities.stamina = 0;
     character.qualities.salud = 100;
 };
