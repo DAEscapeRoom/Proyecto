@@ -161,4 +161,62 @@ En cuanto a la cantidad de tareas soluconadas en el sprint nos pasamos un poco, 
 
 Tomar mejores decisiones a la hora de coger las tareas del sprint, intentar hacer las daily scrum, ademas de asignarnos las tareas utilizando trello para poder mirar en cada momento lo que estamos haciendo.
 
+# Sprint 2
+
+### Product owner: Pedro Reyes Mora
+
+#### Product backlog refinement
+
+En esta sesión decidimos añadir el metodo que al llegar a 0 de vida el jugador acabe el juego directamente.
+
+
+#### Así es como queda el sprint backlog tras el primer sprint
+![Trello sprint 2](/trellosprint2.PNG)
+
+Enlace al tablero del sprint nº2:
+[Enlace a Trello](https://trello.com/b/eERsTJ6s/sprint-2)
+
+#### Resultados del sprint retrospective/review
+##### Dialy scrum
+
+Se ha intentado seguir con la reuniones semanales de la mejor forma posible aunque por temas personales, de falta
+material, problemas familiares y dificultades a la hora de compaginar horarios hemos tenido bastante problemas
+para realizarlas con normalidad. En ninguna de ellas hemos estado todos los miembros del grupo aunque nos fuimos
+informando unos a otros via mensajeria.
+
+Han sido reuniones cortas donde solo se debatían problemas relacionados con el código y el uso del framework.
+
+##### Organización
+
+Comenzamos como siempre, repartiendo el trabajo de la mejor manera que vimos pero por problemas de falta de material
+tuvimos que cambiar las tareas de los compañeros ya que uno de ellos no puede realizar las tareas de programador
+ya que no dispone de un ordenador propio con el que trabajar. Nos ocurrio como en el primer sprint que cogimos más
+tareas de las que podíamos abarcar asique redistribuimos la carga de trabajo para poder realizar las máximas posibles
+dentro de nuestras posibilidades.
+
+
+##### Cumplimiento del sprint 
+
+Pensamos que ya que en el anterior al pasarnos cogiendo tareas era mejor coger menos pero no fuimos conscientes de la
+carga de trabajo que suponían estas mismas asique no se han completado tal y como queríamos aunque conseguimos la 
+funcionalidad que nos propusimos en el principio.
+
+
+##### Aspectos a mejorar
+
+volver a revisar las decisiones que tomamos para no cometer el mismo error que en el primer sprint e intentar adaptarnos
+a las situaciones en las que nos encontramos y poder seguir trabajando aun estando en una situación excepcional y no
+poder compaginar en su totalidad el trabajo con el encierro.
+
+##### Problemas durante el desarrollo del sprint
+
+Hemos tenido bastantes problemas durante el desarrollo de este sprint, desde casi un principio uno de los compañeros no ha 
+podido desarrollar siendo una de sus tareas está, por no disponer de un ordenador propio con el que trabajar y eso a 
+supuesto una reorganización de las tareas que no ha sido facil, ademas tenemos que contar con que otro compañero se 
+encuentra a cargo de un familiar que se encuentra en el grupo de riesgo lo que no le permite estar disponible, sin
+contar con la carga de trabajo de otras asignaturas que en conjunto nos ha afectado a todos y no nos permite disponer
+de todo el tiempo posible, aunque nos encontramos encerrados en casa y no tenemos trabajo externo, no podemos olvidar 
+la carga psicologica de la situación y que no todos estamos llevando de la misma forma y esto afecta a nuestro rendimiento
+a la hora de trabajar.
+
 
