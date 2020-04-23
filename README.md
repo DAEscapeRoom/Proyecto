@@ -170,7 +170,7 @@ Tomar mejores decisiones a la hora de coger las tareas del sprint, intentar hace
 En esta sesión decidimos añadir el metodo que al llegar a 0 de vida el jugador acabe el juego directamente.
 
 
-#### Así es como queda el sprint backlog tras el primer sprint
+#### Así es como queda el sprint backlog tras el segundo sprint
 ![Trello sprint 2](/trellosprint2.PNG)
 
 Enlace al tablero del sprint nº2:
