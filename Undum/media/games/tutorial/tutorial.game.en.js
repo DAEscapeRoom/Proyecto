@@ -109,12 +109,75 @@ undum.game.situations = {
     ),
 	izquierda: new undum.SimpleSituation(
         "<p>Decides pasar la puerta de la izquierda, te encuentras en una \ \n\
-		sala vacía, lo único que puedes hacer es volver atras.\ \n\</p>\ \n\
+		habitación con na estatua en el centro, era una mujer con los ojos\ \n\
+		vendados y una espada en cada mano, si hubieses ido a clase de historia\ \n\
+		reconocerías a quien representa la estatua pero como no fuiste solo\ \n\
+		puedes observar preguntandote que pasará.\ \n\
+		Una televisión se enciende y la sileta parece alog mas nitida pero aun asi\ \n\
+		no puedes distinguirla\ \n\
+		'Ratoncito, esta dama está ciega, pero no sorda, debes de ser muy silencioso\ \n\
+		si no quieres conocerla de cerca.'\ \n\</p>\ \n\
 			\
 		<p class='transient'><br>\ \n\
-		<a href='observar'>volver a la habitaci�n anterior</a></p>"
+		<a href='izqierdaobservar'>Mirar detenidamente</a></p>"
 	
     ),
+	izqierdaobservar: new undum.SimpleSituation(
+		"<p>Ves que es suelo está formado por unas baldosas extrañas, estas emiten un pequeño\
+		sonido al tocarlas y ves que la estatua se gira y avanza un poco en función de qué\
+		baldosa toques. Al final de la sala hay una caja en un pedestal</p>\ \n\
+		\
+		<p class='transient'><br>\ \n\
+		<a href='muerteestatua'>intentar avanzar despacio baldosa a baldosa tratando\
+		de que la estatua no se mueva rápido.</a></p>\
+		<p class='transient'><br>\ \n\
+		<a href='izqierdalento'>intentar avanzar despacio pero saltándose baldosas\
+		para que asi el numero de movimientos de la estatua sea menor</a></p>\
+		<p class='transient'><br>\ \n\
+		<a href='observarestatua'>Observar detenidamente</a></p>"
+		
+		
+		
+	),
+	observarestatua: new undum.SimpleSituation(
+		"<p>Al mirar más detenidamente una de las baldosas te das cuenta de que puedes\
+		levantarla y al hacerlo ves un cable que se enreda en una pieza y se extiende\
+		a las demás baldosas. </p>\
+		<p class='transient'><br>\ \n\
+		<a href='izqierdaobservar'>Dejar la baldosa como estaba</a><br>\ \n\
+		<a href='./cortar'>cortar los cables</a></p>",
+	{	
+	actions:{
+		cortar:function(character,system,action){
+			if(character.qualities.alicates == true){
+				system.write("<p class='transient'><a href='izquierdacontinua'>Puedes cortar el cable con unos alicates</a></p>");
+			}else{
+			system.write("<p class='transient'><a href='observar'> no puedes continuar sin unos alicates por tanto vuelves en busca de unos</a></p>");
+			}
+		}
+	},
+	}
+		
+	),
+	muerteestatua: new undum.SimpleSituation(
+		"<p>La estatua va muy rápido así que te aplasta y mueres, GAME OVER</p>"
+	),
+	izqierdalento: new undum.SimpleSituation(
+		"<p>Consiges llegar hasta el final, pero la estatua de daña a la salida de la sala</p>\
+		<p class='transient'><br>\ \n\
+		<a href='izquierdacontinua'>Continuar</a></p>"
+	),
+	izquierdacontinua: new undum.SimpleSituation(
+		"<p>Has conseguido que la estatua no te mate,ahora tienes otro fragmento de la llave,\
+		solo puedes continuar hasta llegar al final.</p>\ \n\
+		\
+		<p class='transient'><a href='salidafinal'>encuentras otra puerta y pruebas a ver si puedes salir</a>"
+		,{
+            exit: function(character, system, to) {
+                system.setQuality("piezas", character.qualities.piezas+1);
+            }
+        }
+	),
 	centro: new undum.SimpleSituation(
         "<p>Decides pasar la puerta de la centro, te encuentras en una \ \n\
 		sala vacía, lo único que puedes hacer es volver atras.\ \n\</p>\ \n\
@@ -124,9 +187,19 @@ undum.game.situations = {
 	
     ),
 	salidafinal: new undum.SimpleSituation(
-        "<p>Con la llave que has entontrado abres la puerta.\ \n\
-		Consigues escapar de ese infierno.\ \n\</p>\ \n\
-			"
+        "<p>Con la llave que has entontrado <a href='./comprobar' class = 'once'>intentas abrir la puerta</a>\ \n\
+		",
+		{
+		actions:{
+		"comprobar":function(character,system,action){
+				if(character.qualities.piezas == 2){
+				system.write("<p>encajas las piezas en la puerta y empieza abrirse la puerta, por fin podras salir de este infierno</p>");
+				}else{
+				system.write("<p class='transient'><a href='observar'> Parece ser que aun falta alguna pieza, el infierno continua</a></p>");
+				}
+			}
+			}
+		}
 	
     ),
 	electrificado: new undum.SimpleSituation(
@@ -169,7 +242,7 @@ undum.game.situations = {
 	"<p>Te das cuenta que entre las baterías hay un pequeño interruptor  \ \n\
 	, hay algo extraño en esta situación pero parece que la suerte acaba de sonreirte.</p> \ \n\
 	\
-	<br><p class='transient'><a href='./cortar'>Usar el interruptor</a><br> \ \n\
+	<br><p class='transient'><a href='electrificado2'>Usar el interruptor</a><br><a href='./cortar'>Cortar los cables</a><br> \ \n\
 	",
 	{	
 	actions:{

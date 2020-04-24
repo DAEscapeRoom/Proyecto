@@ -168,8 +168,16 @@ undum.game.situations = {
 		<a href='izquierdacontinua'>Continuar</a></p>"
 	),
 	izquierdacontinua: new undum.SimpleSituation(
-		"<p>Has conseguido que la estatua no te mate, ahora tienes otro fragmento de la llave,\
-		solo puedes continuar hasta llegar al final.</p>"
+		"<p>Has conseguido que la estatua no te mate, <a href='./fragmento' class='once'>ahora tienes otro fragmento de la llave</a>,\
+		solo puedes continuar hasta llegar al final.</p>\ \n\
+		\
+		<p class='transient'><a href='observar'>volver a la zona central</a>"
+		,{
+		  actions: {
+                fragmento: function(character, system, action) {
+                    system.setQuality("piezas", character.qualities.piezas+1);
+                }
+            },
 	),
 	centro: new undum.SimpleSituation(
         "<p>Decides pasar la puerta de la centro, te encuentras en una \ \n\
@@ -180,9 +188,17 @@ undum.game.situations = {
 	
     ),
 	salidafinal: new undum.SimpleSituation(
-        "<p>Con la llave que has entontrado abres la puerta.\ \n\
-		Consigues escapar de ese infierno.\ \n\</p>\ \n\
-			"
+        "<p>Con la llave que has entontrado <a href='./comprobar' class = 'once'>intentas abrir la puerta</a>\ \n\
+		",
+		{
+		actions:{
+		cortar:function(character,system,action){
+			if(character.qualities.piezas=>2){
+				system.write("<p>encajas las piezas en la puerta y empieza abrirse la puerta, por fin podras salir de este infierno</p>");
+			}else{
+			system.write("<p class='transient'><a href='observar'> Parece ser que aun falta alguna pieza, el infierno continua</a></p>");
+			}
+		}
 	
     ),
 	electrificado: new undum.SimpleSituation(
