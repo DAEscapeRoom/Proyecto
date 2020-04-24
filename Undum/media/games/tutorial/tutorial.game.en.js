@@ -82,22 +82,22 @@ undum.game.situations = {
     observar: new undum.SimpleSituation(
         "<h1>Escena 2: Corre Raton</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Tras pasar la puerta te encuentras en una habitaciÛn con una puerta\ \n\
-            por cada pared y encima de cada una de las puertas unos sÌmbolos en\ \n\
+        <p>Tras pasar la puerta te encuentras en una habitaci√≥n con una puerta\ \n\
+            por cada pared y encima de cada una de las puertas unos s√≠mbolos en\ \n\
             la parte superior del marco. Tienes un rayo, lo que parece una mujer\ \n\
-            de perfil con los ojos cerrados, una puerta con un cÌrculo en el centro\ \n\
-            y una carita sonriente. Antes de que te dÈ tiempo a poder observar mejor\ \n\
-            la sala una televisiÛn se enciende en una de sus esquinas, comienza a sonar\ \n\
-            m˙sica cl·sica ya sucederse im·genes de familias felices guerra y varios\ \n\
-            temas que no consigues comprender cÛmo est·n relacionados, antes de que digas\ \n\
+            de perfil con los ojos cerrados, una puerta con un c√≠rculo en el centro\ \n\
+            y una carita sonriente. Antes de que te d√© tiempo a poder observar mejor\ \n\
+            la sala una televisi√≥n se enciende en una de sus esquinas, comienza a sonar\ \n\
+            m√∫sica cl√°sica ya sucederse im√°genes de familias felices guerra y varios\ \n\
+            temas que no consigues comprender c√≥mo est√°n relacionados, antes de que digas\ \n\
             una palabra una voz familiar sale de ese televisor y la imagen de la silueta se \\n\
             apodera de la pantalla.</p>\
         \
-        <p> -Es hora de elegir ratoncito, cada puerta te llevar· a una prueba para conseguir\\n\
+        <p> -Es hora de elegir ratoncito, cada puerta te llevar√° a una prueba para conseguir\\n\
              un fragmento de ese delicioso queso que tanto buscas, da igual el orden que \\n\
-             elijas, hasta que no acabes todas no podr·s continuar.</p>\
+             elijas, hasta que no acabes todas no podr√°s continuar.</p>\
         \
-		<p>La imagen de la pantalla desaparece, y ahÌ est·s t˙ ante otra elecciÛn.</p>\
+		<p>La imagen de la pantalla desaparece, y ah√≠ est√°s t√∫ ante otra elecci√≥n.</p>\
 		\
         <p class='transient'>Ves tres puertas. <br><a href='derecha' class='once'>elegir\
         la puerta de la derecha</a><br><a href='izquierda'>elegir\
