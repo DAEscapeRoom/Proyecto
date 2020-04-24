@@ -49,8 +49,19 @@ undum.game.situations = {
 		qué se refería con el queso</p>\
 		\
         <p class='transient'>Ves una puerta. <br><a href='hub'>Salir\
-        por la puerta</a></p>"
+        por la puerta</a><br><a href='buscar'>buscar por la sala</a></p>"
     ),
+	buscar: new undum.SimpleSituation(
+		"<p> Buscas por la extraña sala en busca de alguna pista,\ \n\
+		pero solo encuentras unos guantes</p>\ \n\
+		\
+		<p class='transient'><a href='start'>coger los guantes y seguir pensando</a></p>",
+		{
+            exit: function(character, system, to) {
+                system.setQuality("guantes", true);
+            }
+        }
+	),
 
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -566,6 +577,9 @@ undum.game.qualities = {
     ),
 	alicates: new undum.OnOffQuality(
 		"Alicates", {priority:"0004", group:'inventario', onDisplay:"✓"}
+	),
+	guantes: new undum.OnOffQuality(
+		"Guantes", {priority:"0005", group:'inventario', onDisplay:"✓"}
 	),
 	
 
