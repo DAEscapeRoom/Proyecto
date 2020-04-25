@@ -219,4 +219,45 @@ de todo el tiempo posible, aunque nos encontramos encerrados en casa y no tenemo
 la carga psicologica de la situación y que no todos estamos llevando de la misma forma y esto afecta a nuestro rendimiento
 a la hora de trabajar.
 
+# Sprint 3
+
+### Product owner: Raúl Zúcar Aceituno 
+
+#### Así es como queda el sprint backlog tras el tercer sprint
+
+![Trello sprint 3](/sprint3.1.PNG)
+![Trello sprint 3](/sprint3.2.PNG)
+
+#### Modificación del tablero de trello a lo largo del sprint
+
+![Trello sprint 3](/sprint3.division.1.PNG)
+![Trello sprint 3](/sprint3.division.2.PNG)
+![Trello sprint 3](/sprint3.division.1.2.PNG)
+![Trello sprint 3](/sprint3.division.2.2.PNG)
+
+Enlace al tablero del sprint nº3:
+[Enlace a Trello](https://trello.com/b/yiDS06DL/sprint-3)
+[Enlace a Trello con las divisiones del trabajo](https://trello.com/b/1wb2t5Le/tareas-sprint-3)
+
+#### Resultados del sprint retrospective/review
+##### Dialy scrum
+
+
+
+##### Organización
+
+
+
+##### Cumplimiento del sprint 
+
+
+
+#### Product backlog refinement
+
+
+
+##### Aspectos a mejorar
+
+
+
 
