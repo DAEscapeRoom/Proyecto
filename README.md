@@ -221,7 +221,7 @@ a la hora de trabajar.
 
 # Sprint 3
 
-### Product owner: Raúl Zúcar Aceituno 
+### Product owner: Raúl Zúcar Aceituno y Ramón Morante Cameros
 
 #### Así es como queda el sprint backlog tras el tercer sprint
 
@@ -262,11 +262,11 @@ Crear un mapa para el juego, desde el cual el jugador pudiese ver donde se encon
 
 Introducir una banda sonora dentro del juego para darle una ambientación mas inmersiba, esta funcionalidad no se recogio en ninguno de los sprint anteriores ni en este porque queriamos dejarlo para el final y asi poder darle los retoques finales y la parte mas artistica como ultimo retoque.
 
-A lo alrgo de los sprint no emos revisado el valor ni los PH de las diferentes funcionalidades, en este ultimo si emos llegado al consenso entre Raul, Pedro y Ramón de modificar alguos de los valores ya que el valor dado a la creación de la web ha sido menor del que deberia, la creación de objetos es incluso mas complicada de lo estimado ya que estos objetos tienen que interactuar con el entorno y son decisivos para al finalización de la historia, es mas sin los objetos de las llaves nunca se podria acabar la historia. Otro punto que pensavamos que no resultaria complejo era el poder darle livertad de elección al usuario y resulta que si a sido mas complejo, por problemas a la hora de acabar la historia y de intentar que no se repitiesen escenas en un bucle infinito.
+A lo largo de los sprint no emos revisado el valor ni los PH de las diferentes funcionalidades, en este ultimo si emos llegado al consenso entre Raul, Pedro y Ramón de modificar algunos de los valores ya que el valor dado a la creación de la web ha sido menor del que deberia, la creación de objetos es incluso mas complicada de lo estimado ya que estos objetos tienen que interactuar con el entorno y son decisivos para al finalización de la historia, es mas sin los objetos de las llaves nunca se podria acabar la historia. Otro punto que pensavamos que no resultaria complejo era el poder darle livertad de elección al usuario y resulta que si a sido mas complejo, por problemas a la hora de acabar la historia y de intentar que no se repitiesen escenas en un bucle infinito. 
 
 Errores en la programación del juego:
 
-En este sprint se ha añadido una nueva habitación al juego pero se hizo en una rama diferente a la rama máster, el resto de personas que seguian trabajando en el juego sigieron trabajando en la rama master y por tanto sin los cambios añadidos, por lo tanto nos pusimos de acuerdo para que la gente que habia trabajado en máster guardara su parte de codigo y lo añadiera después de hacer el merge con la rama que añadia la nueva habitación y al final todo siguió su curso.
+En este sprint se ha añadido una nueva habitación al juego pero se hizo en una rama diferente a la rama máster, el resto de personas que seguian trabajando en el juego siguieron trabajando en la rama master y por tanto sin los cambios añadidos, por lo tanto nos pusimos de acuerdo para que la gente que habia trabajado en máster guardara su parte de codigo y lo añadiera después de hacer el merge con la rama que añadia la nueva habitación y al final todo siguió su curso.
 
 Al modificar el número de llaves necesarias para salir habia un error porque los condicionales no estaban bien implementados y no se podía acabar el juego aunque tubieras todas las llaves necesarias para acabar.
 
@@ -277,20 +277,36 @@ En la primera escena en la que se presenta la situación y nos deja escoger la h
 En el intento de insertar el juego en la página web pensabamos que iba a ser tan simple como meter en un servidor todos los archivos del juego pero al final no fue tan simple y tampoco disponiamos de los medios para hacerlo en nuestro ordenador.
 
 Se intentó meter el minimapa tomando como referencia un juego que encontramos por reddit pero tras muchos intentos no conseguimos hacerlo funcionar de ninguna forma.
-##### Organización
 
+Por donde continuar: 
 
+Las ideas para continuar con nuestar historia seria realizar el mapa, el cual daria mucha visivilidad a la hora de movernos por las diferentes salas. Otro punto con el que deberiamos continuar es la implementación de musica dependiendo de las situaciones y las salas por las que se moveria el jugador, asi dariamos una mayor inmersión a la historia y aumentariamos el valor del escaperoom. Ademas podriamos continuar la historia con una segunda galeria de pruevas para que asi la historia no fuese tan simple, añadiendo pruebas que pusiesen mas a prueba a los jugadores y que el sistema de puntiación tubisese mas sentido y pudiese ser mas competitivo. Por ultimo subiriamos el juego a alguna plataforma web para asi poder darle acceso a los jugados a la historia y en esta misma implementariamos el ranking de puntuación que se mediria con los puntos de vida con los que acabarian los jugadores nuestra historia, permitiendoles asi ademas modificar sus propias marcas y conseguir que compitan con otros jugadores por obtener la mayor puntuación posible.
 
-##### Cumplimiento del sprint 
+Que aportaria mayor valor al producto:
 
+De todo lo citado anteriormente lo que mas valor podria aportar al nuestro escaperoom seria la web aunque a nivel de juego la banda sonora y el mapa tambien serian muy importantes 
 
 
 #### Product backlog refinement
 
+Empecemos por que se ha realizado de forma correcta: 
 
+Emos realizado la mayoria de los objetivos que nos propusimos, realizamos bastantes mas reuniones en las que poder ver y debatir sobre los fallos que se realizaban a la hora de subir nuevas partes del codigo y con esto pudimos evitar que se aglomerasen los erroes y estos nos frenasen como en los anteriores sprint. Tambien llegamos a utilizas mas la pagina de trello y conseguimos repartir (aunque de forma tardia) la atrea de una forma mas omogenea aunque las modificaciones en este mismo llegaron tarde asi como el desplazamiento e las fichas de una parte a otra del proceso. Aunque seguimos utilizando wasap y discord para comunicarnos estos nos han sido bastante utilies a la hora de realizar al reuniones anteriormente citadas, nos parecia mucho mas comoda la comunicación para las reuniones atrabes de discord gracias al compartir pantalla y otras herramientas de las que dispone para poder trabajar a distancia (ya que Ramón no disponia del material necesario para poder programar o avanzar con la modificación del codigo creado), todos estavamos mas familiarizados con ella y nos resultava mucho mas intutita y facil de utilizar que las herramientas propuestas para estas practicas.
+
+Que problemas o malos habitos emos tenido a lo largo de este sprint:
+
+Debido a la falta de material de la que disponia Ramón en muchas ocasiones el no podia realizar modificaciones del codigo o podia ayudar a avanzar con este mismo, por esto tubimos que modificar la disposición del trabajo lo que ha aumentado la carga de trabajo de los demas compañeros, hay que recalcar que tampoco el podia hacer mucho, al no disponer de un ordenador propio sobre el que trabajar su disponivilidad de horarios era distinta a la de los compañeros y su tiempo de trabajo era menor, ademas por motivos personales tuvo que faltar a algunas de las reuniones. Consiguio trabajar en algunas de las partes como documentación, busqueda de imagenes y dentro de trello para asi que su aportación no fuese nula.
+
+Raúl no ha podido estar en algunas reuniones y su puntualidad a la hora la reunión ha dejado bastante que desear a veces por motivos personales y otras simplemente por olvido, a parte ha habido falta en la constancia del trabajo dejando las cosas a veces para última hora y causando en una ocasión problemas con ello aunque pudieron arreglarse posteriormente.
+
+Pedro aunque ha estado mas atento a la hora de realizar las reuniones, es verdad que no ha mantenido una constancia diaria a la hora de trabajar y ha dejado la mayoría del trabajo para ultima hora y eso a acarreado que la carga de trabajo a sido mayor en la horas finales de la realización del proyecto.
+
+Rafael desde un principio nos aviso de que no asistiria a ninguna de las reuniones que realizariamos en este sprint (ni en los anteriores por motivos de carga de trabajo de otras asignaturas), debido a esto parte del codigo sobre el que el trabajaba a tenido que ser modificado por los compañeros (en sprint anteriores), como no ha asistido a las citadas reuniones los problemas que este codigo generaba no han podido ser consultadas con el y a raiz de esto el resto de compañeros se han ido informando entre ellos llegando al punto de no consultar con el nada relacionado con su parte del proyecto. A esto se debe añadir que ha realizado partes del proyecto a ultima hora (por falta de constancia) las cuales no habian sido comunicados a los compañeros hasta ultima hora y esto a producido una mayor carga de trabajo al resto de compañeros.
+
+anexo: Emos tenido bastantes problemas con github y la creación de ramas para trabajr sobre ellas, hacindo que en ocasiones aunque se subiesen modificaciones del codigo, al descargar el proyecto en este no se encontraban.
 
 ##### Aspectos a mejorar
 
-
+Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no han sido fructiferas aunque no se reuniesen todos los compañeros. La constacia del trabajo deberia llevarse a cabo y no dejar el trabajo para la ultima semana. La correcta utilización de las herramientas de trabajo como github en la cual se deberia subir las modificaciones a diario y no el ultimo dia cuando no se pueden demostrar las modificaciones llevadas a cabo.
 
 
