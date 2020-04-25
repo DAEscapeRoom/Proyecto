@@ -230,8 +230,8 @@ a la hora de trabajar.
 
 #### Modificación del tablero de trello a lo largo del sprint
 
-![Trello sprint 3.division.1](/sprint3.Imagenes/sprint3.division.1.PNG)
-![Trello sprint 3.division.2](/sprint3.Imagenes/sprint3.division.2.PNG)
+![Trello sprint 3.division.1](/sprint3.Imagenes/sprint3.1.PNG)
+![Trello sprint 3.division.2](/sprint3.Imagenes/sprint3.2.PNG)
 ![Trello sprint 3.division.1.2](/sprint3.Imagenes/sprint3.division.1.2.PNG)
 ![Trello sprint 3.division.2.2](/sprint3.Imagenes/sprint3.division.2.2.PNG)
 
