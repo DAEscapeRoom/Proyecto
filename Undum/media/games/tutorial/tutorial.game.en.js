@@ -92,6 +92,20 @@ undum.game.situations = {
         la puerta del centro</a></p>"
 
     ),
+	observarizquierda: new undum.SimpleSituation(
+        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        <p class='transient'>Ves tres puertas.\n <br><a href='derecha' class='once'>elegir\
+        la puerta de la derecha</a><br><a href='centro'>elegir\
+        la puerta del centro</a></p>"
+
+    ),
+	observarderecha: new undum.SimpleSituation(
+        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        <p class='transient'>Ves tres puertas.\n <br><a href='izquierda'>elegir\
+        la puerta de la izquierda</a><br><a href='centro'>elegir\
+        la puerta del centro</a></p>"
+
+    ),
      derecha: new undum.SimpleSituation(
         "<p>decides pasar la puerta de la derecha, te acercas a ella y se va\ \n\
 		abriendo cada vez más por cada paso que das.En su interior ves un acuario, pero tiene\ \n\
@@ -168,7 +182,7 @@ undum.game.situations = {
 		"<p>Has conseguido que la estatua no te mate,ahora tienes otro fragmento de la llave,\
 		solo puedes continuar hasta llegar al final.</p>\ \n\
 		\
-		<p class='transient'><a href='salidafinal'>encuentras otra puerta y pruebas a ver si puedes salir</a>"
+		<p class='transient'><a href='salidafinalizq'>encuentras otra puerta y pruebas a ver si puedes salir</a>"
 		,{
             exit: function(character, system, to) {
                 system.setQuality("piezas", character.qualities.piezas+1);
@@ -193,6 +207,38 @@ undum.game.situations = {
 				system.write("<p>encajas las piezas en la puerta y empieza abrirse la puerta, por fin podras salir de este infierno</p>");
 				}else{
 				system.write("<p class='transient'><a href='observar'> Parece ser que aun falta alguna pieza, el infierno continua</a></p>");
+				}
+			}
+			}
+		}
+	
+    ),
+	salidafinalizq: new undum.SimpleSituation(
+        "<p>Con la llave que has entontrado <a href='./comprobar' class = 'once'>intentas abrir la puerta</a>\ \n\
+		",
+		{
+		actions:{
+		"comprobar":function(character,system,action){
+				if(character.qualities.piezas == 2){
+				system.write("<p>encajas las piezas en la puerta y empieza abrirse la puerta, por fin podras salir de este infierno</p>");
+				}else{
+				system.write("<p class='transient'><a href='observarizquierda'> Parece ser que aun falta alguna pieza, el infierno continua</a></p>");
+				}
+			}
+			}
+		}
+	
+    ),
+	salidafinalder: new undum.SimpleSituation(
+        "<p>Con la llave que has entontrado <a href='./comprobar' class = 'once'>intentas abrir la puerta</a>\ \n\
+		",
+		{
+		actions:{
+		"comprobar":function(character,system,action){
+				if(character.qualities.piezas == 2){
+				system.write("<p>encajas las piezas en la puerta y empieza abrirse la puerta, por fin podras salir de este infierno</p>");
+				}else{
+				system.write("<p class='transient'><a href='observarderecha'> Parece ser que aun falta alguna pieza, el infierno continua</a></p>");
 				}
 			}
 			}
@@ -266,7 +312,7 @@ undum.game.situations = {
 	Tras cogerla y abrirla en el interior, ves un fragmento de algún tipo de simbolo, es la \ \n\
 	llave de tu libertad.(Consigues un fragmento del puzle final para escapar).<br></p> \ \n\
 	\
-	<p class='transient'><a href='salidafinal'>abres la puerta</a></p>",
+	<p class='transient'><a href='salidafinalder'>abres la puerta</a></p>",
 		{
             exit: function(character, system, to) {
                 system.setQuality("piezas", character.qualities.piezas+1);
