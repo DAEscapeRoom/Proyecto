@@ -45,14 +45,6 @@ undum.game.situations = {
         }
 	),
 
-    // NB: The 'hub' situation which is the main list of topics, is
-    // defined wholly in the HTML file, and doesn't have an entry in
-    // the game.situations dictionary in this file.
-
-    // For variety, here we define a situation using the top-level
-    // Situation type. This is a neat approach to generate text by
-    // looking it up in the HTML document. For static text that makes
-    // more sense than writing it longhand.
     situations: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations").html());
@@ -85,7 +77,7 @@ undum.game.situations = {
 
     ),
     observar: new undum.SimpleSituation(
-        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        "<img src='media/games/tutorial/door.jpg' class='float_right'>\
         <p class='transient'>Ves tres puertas.\n <br><a href='derecha' class='once'>elegir\
         la puerta de la derecha</a><br><a href='izquierda'>elegir\
         la puerta de la izquierda</a><br><a href='centro'>elegir\
