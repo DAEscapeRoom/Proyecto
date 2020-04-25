@@ -230,8 +230,8 @@ a la hora de trabajar.
 
 #### Modificación del tablero de trello a lo largo del sprint
 
-![Trello sprint 3.1](/sprint3.Imagenes/sprint3.division.1.PNG)
-![Trello sprint 3.2](/sprint3.Imagenes/sprint3.division.2.PNG)
+![Trello sprint 3.division.1](/sprint3.Imagenes/sprint3.division.1.PNG)
+![Trello sprint 3.division.2](/sprint3.Imagenes/sprint3.division.2.PNG)
 ![Trello sprint 3.division.1.2](/sprint3.Imagenes/sprint3.division.1.2.PNG)
 ![Trello sprint 3.division.2.2](/sprint3.Imagenes/sprint3.division.2.2.PNG)
 
@@ -240,7 +240,29 @@ Enlace al tablero del sprint nº3:
 [Enlace a Trello con las divisiones del trabajo](https://trello.com/b/1wb2t5Le/tareas-sprint-3)
 
 #### Resultados del sprint retrospective/review
-##### Dialy scrum
+##### sprint review
+
+Las funcionalidades implementadas en este sprint han sido: 
+
+La acción mirar detalladamente para varias escenas y asi poder cumplir con una de las peticiones obligatorias, aunque no han podido implimentarse en su totalidad como deseabamos ya que el framework de urdum no nos permitia encadenar varias acciones de forma simple sin dar algun fallo o impedirnos avanzar con el sprint, asique optamos por darles una función as observativa que crucial dentro del escaperoom.
+
+El jugador podra moverse entre varias situaciones a su eleccion, en este caso tubimos que modificar la escena 2 ya que o introduciamos una nueva forma de que pudiese elegir que camino tomar o el jugador podria repetir los mismos caminos de forma infinita y recoger los objetos de la msma forma sin que la historia avanzase con normalidad. Con esto conseguimos que el jugador pudiese moverse por diferentes escenas e impedirle repetir la misma prueba para que asi el juego no acabase de forma sencialla repitiendo la prueba mas facil y consiguiendo todas las piezas de la llave final.
+
+El jugador podra encontrar y utilizar diversos objetos a lo largo del escaperoom, ejemplo de esto son las piezas para componer la llave final, las cuales tubimos que modificar ya que como se comenta en el apartado anterior si solo generabamos una y el jugador repetia la sala podia acabar el juego sin visitar ninguna sala mas, asique creamos una segunda llave con la que asi le impediamos acabar el juego de forma simple y repetitiva. Otro objeto que podemos obtener a lo largo de la aventura son unas tenazas/alicates con los que oder interactuar con el entorno y que nos ayudan a resolver los puzzles, aunque en un principio tenian mas funcionalidad por motivos de complicaciones a la hora de programar los condicionales, decidimos reducir su funcionalidad aunque aun asi siguen usandose para facilitar la resolucin de los puzzles. Unos guantes culla idea es reducir el daño que sufra el jugador a lo largo del escaperoom ya que la idea principal de puntuación a sido la cantiad de vida con la que acabe la aventura, de todas formas queriamos introducir mas formas de puntuación pero por problemas a la hora de programar y falta de organización y tiempo pensamos que seria mejor dejar solo la vida como puntuación definitiva d ela historia.
+
+Emos introducido imagenes descriptivas para cada situación, aunque la idea era que las imagenes estuviesen realizadas por nosotros y se pudiesen modificar dependiendo de los actos del entorno, nos dimos cuenta que era demasiado ambicioso para el tiempo y el tipo de proyecto que teniamos entre manos, asique adoptamos algunas imagenes de repositorios de internet y las introdugimos en el codigo, no son las imagenes que deseavamos en un principio pero ayudaran al jugador a introducirse en la historia.
+
+Continuamos con la historia añadiendo una nueva habitación con un puzzle nuevo, desde un principio ya estava la idea pero no sabiamos bien como hacerlo, tuvimos problemas en esta escena para introducir los alicates para facilitar la finalización del puzzle, pero conseguimos cortar el cable y asi ayudar al jugador a tener mas opciones a la hora de finalizar este puzzle.
+
+Las funcionalidades no implementadas en este sprint han sido: 
+
+Crear un sitio web desde donde lanzar el juego, que en un principio nos parecia una idea muy sencilla y a la cual no le dimos un valor alto, a lo largo de buscar un sitio web donde subirla y de ver que teniamos que montar un servidor propio ya que urdum no es compatible con la mayoria de los sitios web a no ser que modifiquemos el codigo y la idea de mantener nosotros un ordenador encendido como servidor para que se pudiese acceder desde el navegador fue una idea impopular en el grupo, asique decidimos dejar esta funcionalidad con todas las del raking, etc que la acompañaban como no realizadas.
+
+Crear un mapa para el juego, desde el cual el jugador pudiese ver donde se encontraba y que salas habia recorrido, en principio no lo pensamos introducir en trello ya que era una idea aparte de las funcionalidades pedidas pero creimos que seria una idea ingeniosa, pero nada mas lejos de la realidad, las ideas para crearlo eran coger imagenes que se fuesen desbloqueando poco a poco pero al final nos dimos cuenta de que era mucho mas complejo de lo que pensabamos y lo dejamos para el final como contenido extra si eramos capaces de programarlo a tiempo.
+
+Introducir una banda sonora dentro del juego para darle una ambientación mas inmersiba, esta funcionalidad no se recogio en ninguno de los sprint anteriores ni en este porque queriamos dejarlo para el final y asi poder darle los retoques finales y la parte mas artistica como ultimo retoque.
+
+A lo alrgo de los sprint no emos revisado el valor ni los PH de las diferentes funcionalidades, en este ultimo si emos llegado al consenso entre Raul, Pedro y Ramón de modificar alguos de los valores ya que el valor dado a la creación de la web ha sido menor del que deberia, la creación de objetos es incluso mas complicada de lo estimado ya que estos objetos tienen que interactuar con el entorno y son decisivos para al finalización de la historia, es mas sin los objetos de las llaves nunca se podria acabar la historia. Otro punto que pensavamos que no resultaria complejo era el poder darle livertad de elección al usuario y resulta que si a sido mas complejo, por problemas a la hora de acabar la historia y de intentar que no se repitiesen escenas en un bucle infinito.
 
 
 
