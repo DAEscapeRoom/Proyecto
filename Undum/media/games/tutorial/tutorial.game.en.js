@@ -10,6 +10,7 @@ undum.game.fadeSpeed = 1500
 undum.game.slideUpSpeed = 500
 
 undum.game.situations = {
+	//Comienzo del juego
     start: new undum.SimpleSituation(
         "<h1>Escena 1: Comienza el juego</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
@@ -31,20 +32,21 @@ undum.game.situations = {
 		qué se refería con el queso</p>\
 		\
         <p class='transient'>Ves una puerta. <br><a href='hub'>Salir\
-        por la puerta</a><br><a href='buscar'>buscar por la sala</a></p>"
+        por la puerta</a><br><a href='buscar'>Buscar por la sala</a></p>"
     ),
+	//Sitio de obtener los guantes
 	buscar: new undum.SimpleSituation(
 		"<p> Buscas por la extraña sala en busca de alguna pista,\ \n\
 		pero solo encuentras unos guantes</p>\ \n\
 		\
-		<p class='transient'><a href='start'>coger los guantes y seguir pensando</a></p>",
+		<p class='transient'><a href='start'>Coger los guantes y seguir pensando</a></p>",
 		{
             exit: function(character, system, to) {
                 system.setQuality("guantes", true);
             }
         }
 	),
-
+	
     situations: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations").html());
@@ -53,6 +55,7 @@ undum.game.situations = {
         optionText: "Salir por la puerta",
         displayOrder: 1
     }),
+	//introdccion
     introduccion: new undum.SimpleSituation(
         "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
         <p>Tras pasar la puerta te encuentras en una habitación con una puerta\ \n\
@@ -74,15 +77,15 @@ undum.game.situations = {
 		\
         <p class='transient'<br><a href='observar'>Continuar</a></p>"
         
-
+	//Elección del puzzle a resolver
     ),
     observar: new undum.SimpleSituation(
         "<img src='media/games/tutorial/door.jpg' class='float_right'>\
-        <p class='transient'>Ves tres puertas.\n <br><a href='derecha' class='once'>elegir\
-        la puerta de la derecha</a><br><a href='izquierda'>elegir\
-        la puerta de la izquierda</a><br><a href='centro'>elegir\
+        <p class='transient'>Ves tres puertas.\n <br><a href='derecha' class='once'>Elegir\
+        la puerta de la derecha</a><br><a href='izquierda'>Elegir\
+        la puerta de la izquierda</a><br><a href='centro'>Elegir\
         la puerta del centro</a></p>"
-
+	
     ),
 	observarizquierda: new undum.SimpleSituation(
         "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
@@ -106,8 +109,8 @@ undum.game.situations = {
 		,ya has encontrado tu queso, ahora solo tienes que cogerlo.</p>\ \n\
 			\
 		<p class='transient'><a href='electrificado'>meter la mano directamente para intentar sacar la caja\ \n\
-		</a>.<br><a href='cables'>Observas la habitaci�n en busca del origen de los cables</a><br>\ \n\
-		<a href='observar'>volver a la habitaci�n anterior</a></p>"
+		</a>.<br><a href='cables'>Observas la habitación en busca del origen de los cables</a><br>\ \n\
+		<a href='observar'>volver a la habitación anterior</a></p>"
 	
     ),
 	izquierda: new undum.SimpleSituation(
@@ -323,7 +326,7 @@ undum.game.situations = {
 
 undum.game.start = "start";
 
-// ---------------------------------------------------------------------------
+// --------------------------------Declaración de los objetos-----------------
 
 undum.game.qualities = {
     piezas: new undum.NumericQuality(
@@ -353,7 +356,7 @@ undum.game.qualityGroups = {
 	inventario: new undum.QualityGroup('Inventario',{priority:"0003"})
 };
 
-// ---------------------------------------------------------------------------
+// ---------------Declaración de las estadisticas del jugador-----------------
 
 undum.game.init = function(character, system) {
     system.setQuality("alicates",false);
