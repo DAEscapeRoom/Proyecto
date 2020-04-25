@@ -264,8 +264,19 @@ Introducir una banda sonora dentro del juego para darle una ambientación mas in
 
 A lo alrgo de los sprint no emos revisado el valor ni los PH de las diferentes funcionalidades, en este ultimo si emos llegado al consenso entre Raul, Pedro y Ramón de modificar alguos de los valores ya que el valor dado a la creación de la web ha sido menor del que deberia, la creación de objetos es incluso mas complicada de lo estimado ya que estos objetos tienen que interactuar con el entorno y son decisivos para al finalización de la historia, es mas sin los objetos de las llaves nunca se podria acabar la historia. Otro punto que pensavamos que no resultaria complejo era el poder darle livertad de elección al usuario y resulta que si a sido mas complejo, por problemas a la hora de acabar la historia y de intentar que no se repitiesen escenas en un bucle infinito.
 
+Errores en la programación del juego:
 
+En este sprint se ha añadido una nueva habitación al juego pero se hizo en una rama diferente a la rama máster, el resto de personas que seguian trabajando en el juego sigieron trabajando en la rama master y por tanto sin los cambios añadidos, por lo tanto nos pusimos de acuerdo para que la gente que habia trabajado en máster guardara su parte de codigo y lo añadiera después de hacer el merge con la rama que añadia la nueva habitación y al final todo siguió su curso.
 
+Al modificar el número de llaves necesarias para salir habia un error porque los condicionales no estaban bien implementados y no se podía acabar el juego aunque tubieras todas las llaves necesarias para acabar.
+
+Al meter las imagenes en el juego no funcionaban y no eramos capaces de que se visualizaran correctamente, pero luego nos dimos cuenta de que habia un error en la ruta de las imagenes.
+
+En la primera escena en la que se presenta la situación y nos deja escoger la habiación a la que queremos ir, queriamos cambiarlo para que si volviamos por una segunda vez no nos mostrara la introducción otra vez pero al final tuvimos problemas y acabamos haciendo una situación nueva a la que se iba cuando se vovia desde cualquier sitio.
+
+En el intento de insertar el juego en la página web pensabamos que iba a ser tan simple como meter en un servidor todos los archivos del juego pero al final no fue tan simple y tampoco disponiamos de los medios para hacerlo en nuestro ordenador.
+
+Se intentó meter el minimapa tomando como referencia un juego que encontramos por reddit pero tras muchos intentos no conseguimos hacerlo funcionar de ninguna forma.
 ##### Organización
 
 
