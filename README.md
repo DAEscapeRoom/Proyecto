@@ -225,15 +225,15 @@ a la hora de trabajar.
 
 #### Así es como queda el sprint backlog tras el tercer sprint
 
-![Trello sprint 3.1](/sprint3.1.PNG)
-![Trello sprint 3.2](/sprint3.2.PNG)
+![Trello sprint 3.1](/sprint3.Imagenes/sprint3.1.PNG)
+![Trello sprint 3.2](/sprint3.Imagenes/sprint3.2.PNG)
 
 #### Modificación del tablero de trello a lo largo del sprint
 
-![Trello sprint 3.1](/sprint3.division.1.PNG)
-![Trello sprint 3.2](/sprint3.division.2.PNG)
-![Trello sprint 3.division.1.2](/sprint3.division.1.2.PNG)
-![Trello sprint 3.division.2.2](/sprint3.division.2.2.PNG)
+![Trello sprint 3.1](/sprint3.Imagenes/sprint3.division.1.PNG)
+![Trello sprint 3.2](/sprint3.Imagenes/sprint3.division.2.PNG)
+![Trello sprint 3.division.1.2](/sprint3.Imagenes/sprint3.division.1.2.PNG)
+![Trello sprint 3.division.2.2](/sprint3.Imagenes/sprint3.division.2.2.PNG)
 
 Enlace al tablero del sprint nº3:
 [Enlace a Trello](https://trello.com/b/yiDS06DL/sprint-3)
