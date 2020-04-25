@@ -309,7 +309,7 @@ anexo: Emos tenido bastantes problemas con github y la creación de ramas para t
 
 Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no han sido fructiferas aunque no se reuniesen todos los compañeros. La constacia del trabajo deberia llevarse a cabo y no dejar el trabajo para la ultima semana. La correcta utilización de las herramientas de trabajo como github en la cual se deberia subir las modificaciones a diario y no el ultimo dia cuando no se pueden demostrar las modificaciones llevadas a cabo.
 
-![Trello sprint 3 final(/sprint3.Imagenes/sprint3.final.PNG)
-![Trello sprint 3 final division 1(/sprint3.Imagenes/tareas.final1.PNG)
-![Trello sprint 3 final division 2(/sprint3.Imagenes/tareas.final2.PNG)
+![Trello sprint 3 final](/sprint3.Imagenes/sprint3.final.PNG)
+![Trello sprint 3 final division 1](/sprint3.Imagenes/tareas.final1.PNG)
+![Trello sprint 3 final division 2](/sprint3.Imagenes/tareas.final2.PNG)
 
