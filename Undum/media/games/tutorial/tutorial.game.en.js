@@ -31,7 +31,7 @@ undum.game.situations = {
 		qué se refería con el queso</p>\
 		\
         <p class='transient'>Ves una puerta. <br><a href='hub'>Salir\
-        por la puerta</a><br><a href='buscar'>buscar por la sala</a></p>"
+        por la puerta</a><br><a href='buscar'>Buscar por la sala</a></p>"
     ),
 	buscar: new undum.SimpleSituation(
 		"<p> Buscas por la extraña sala en busca de alguna pista,\ \n\
@@ -61,9 +61,19 @@ undum.game.situations = {
         optionText: "Salir por la puerta",
         displayOrder: 1
     }),
-    observar: new undum.SimpleSituation(
-        "<h1>Escena 2: Corre Raton</h1>\
-        <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+    introduccion: new undum.SimpleSituation(
+        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        <p>Tras pasar la puerta te encuentras en una habitación con una puerta\
+            por cada pared y encima de cada una de las puertas unos símbolos en\
+            la parte superior del marco. Tienes un rayo, lo que parece una mujer\
+            de perfil con los ojos cerrados, una puerta con un círculo en el centro\
+            y una carita sonriente. Antes de que te dé tiempo a poder observar mejor\
+            la sala una televisión se enciende en una de sus esquinas, comienza a sonar\
+            música clásica ya sucederse imágenes de familias felices guerra y varios\
+            temas que no consigues comprender cómo están relacionados, antes de que digas\
+            una palabra una voz familiar sale de ese televisor y la imagen de la silueta se\
+            apodera introduccion: new undum.SimpleSituation(
+        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
         <p>Tras pasar la puerta te encuentras en una habitación con una puerta\ \n\
             por cada pared y encima de cada una de las puertas unos símbolos en\ \n\
             la parte superior del marco. Tienes un rayo, lo que parece una mujer\ \n\
@@ -81,11 +91,35 @@ undum.game.situations = {
         \
 		<p>La imagen de la pantalla desaparece, y ahí estás tú ante otra elección.</p>\
 		\
-        <p class='transient'>Ves tres puertas. <br><a href='derecha' class='once'>elegir\
+        <p class='transient'<br><a href='observar'>Continuar</a></p>"
+        
+
+    ),
+    observar: new undum.SimpleSituation(
+        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        <p class='transient'>Ves tres puertas.\n <br><a href='derecha' class='once'>elegir\
         la puerta de la derecha</a><br><a href='izquierda'>elegir\
         la puerta de la izquierda</a><br><a href='centro'>elegir\
-        la puerta del centro</a></p>\
-<p class='transient'>Hacer Hub de las decisiones 2</p>",
+        la puerta del centro</a></p>"
+
+    ),de la pantalla.</p>\
+        \
+        <p> -Es hora de elegir ratoncito, cada puerta te llevará a una prueba para conseguir\
+             un fragmento de ese delicioso queso que tanto buscas, da igual el orden que \
+             elijas, hasta que no acabes todas no podrás continuar.</p>\
+        \
+		<p>La imagen de la pantalla desaparece, y ahí estás tú ante otra elección.</p>\
+		\
+        <p class='transient'<br><a href='observar'>Continuar</a></p>"
+        
+
+    ),
+    observar: new undum.SimpleSituation(
+        "<img src='media/games/tutorial/woodcut1.png' class='float_right'>\
+        <p class='transient'>Ves tres puertas.\n <br><a href='derecha' class='once'>Elegir\
+        la puerta de la derecha</a><br><a href='izquierda'>elegir\
+        la puerta de la izquierda</a><br><a href='centro'>elegir\
+        la puerta del centro</a></p>"
 
     ),
      derecha: new undum.SimpleSituation(
