@@ -321,7 +321,7 @@ Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no ha
 
 General
 
-![PHHechos General](/Imagenes Metricuas/PHHechos.General.PNG)
+![PHHechos General](/Imagenes Metricas/PHHechos.General.PNG)
 
 
 Sprint 1
