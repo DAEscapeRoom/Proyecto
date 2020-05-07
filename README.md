@@ -313,3 +313,20 @@ Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no ha
 ![Trello sprint 3 final division 1](/sprint3.Imagenes/tareas.final1.PNG)
 ![Trello sprint 3 final division 2](/sprint3.Imagenes/tareas.final2.PNG)
 
+
+
+
+
+##### Métricas
+
+General
+
+![PHHechos General](/Imagenes Metricuas/PHHechos.General.PNG)
+
+
+Sprint 1
+
+
+
+
+
