@@ -387,4 +387,27 @@ En este Sprint comenzando siendo realistas con el tiempo que disponíamos, ha si
 
 [Enlace a la hoja de calculo donde están todas las tablas](https://docs.google.com/spreadsheets/d/1VnMfcXeP1flbRmkpSM9CrCRv1NOV5WqoRnXqZ04Hpy0/edit?usp=sharing)
 
+Anexo
+
+Aqui hablaremos sobre como hemos dividido las tareas, su subdivisión, ademas de el porque unas tareas tienen mayor valor que otra:
+
+1-El jugador podrá elegir en diferentes situaciones: Realizada en el sprint 2 y 3. En el sprint 2 tiene más valor y más PH porqué le dimos más libertad de elección que en el sprint 3. En el sprint 3 solo metimos algunas escenas más y arreglamos fallos.
+2-El jugador podrá moverse de unas situaciones a otras: En el sprint 1 tiene más valor porque tuvimos que aprender a codificarlo mientras que en el sprint 3 ya sabíamos hacerlo y solo fue añadir algunas cambios.
+3-El jugador podrá recoger objetos a lo largo del juego: En el sprint 1 tiene más valor y PH porque tuvimos que aprender cómo funcionaba el código de los objetos mientras que en el sprint 2 y 3 solo fue trabajar sobre algo que conocíamos.
+4-El jugador podrá usar objetos para resolver puzzles: El valor y PH se dividió a partes iguales porque se metieron una cantidad similar de objetos.
+5-El jugador podrá usar la acción “mirar detalladamente” para descubrir nuevas cosas en ciertas situaciones: se le dio más funcionalidad a la acción “mirar detalladamente” en el sprint 3 y por tanto tiene un mayor valor y PH.
+6-Cada sprint incluye nuevas situaciones. Los PH y valor se dividió entre los 3 sprint al ser una épica.
+7-Cada situación deberá llevar una imagen descriptiva asociada:Tiene un valor y PH mayor en el  sprint 1 donde tuvimos que aprender a codificarlo, además de meter fondo y cabecera, en el sprint 3 se añadieron las demás imágenes. 
+8-La imagen de una situación podrá cambiar en función de los objetos que tenga el usuario: No dio tiempo a modificar imagenes.
+9-El jugador debe poder saber cuántos puntos lleva en la partida: Esta tarea tiene una mayor carga en los sprint 1 y 2 que en el tercero. En el sprint 1 metimos la vida y aprendimos a codificarlo, en el sprint 2 le dimos bastante uso y en el sprint 3 no se uso casi.
+10-El usuario debe poder jugar al juego online. Al final no se realizó la tarea 13, crear la web. Por tanto esta tarea depende la otra y no se hizo.
+11-Se podrá almacenar el estado de la partida en cualquier momento. Realizado en el sprint 1.
+12-Se podrá borrar el estado del juego en cualquier momento.Realizado en el sprint 1.
+13-Crear un sitio web para lanzar el juego: En principio lo metimos en el segundo sprint, pensábamos que sería simple porque alguna vez hemos hecho alguna página web en un servidor pero al intentarlo con el proyecto de UNDUMno fue tan fácil como esto, y nos quedamos estancados en esto, así de decidimos dejarlo para poder centrarnos en otras tareas que sí que pudimos llevar a cabo.
+14-Establecer un sistema de login contraseña:Como no pudimos hacer la página web no podíamos implementar sistema de login/contraseña
+15-Se podrá recuperar la partida desde cualquier otro dispositivo y navegador:Depende de una base de datos, la cual por problemas de tiempo tampoco se pudo llevar a cabo.
+16-El sitio web tiene un ranking de jugadores: Dado que depende de la página web no pudo ser llevado a cabo.
+17-Creación del mapa: Este requisito fue añadido por nosotros ya que lo vimos en un juego que encontramos en la primera práctica y pensamos que sería sencillo de implementar pero después vimos que era mucho más complejo de lo que parecía y se descarto la idea de hacerlo.
+18-Añadir música/efectos visuales a ciertas escenas y situaciones:En resumidas cuentas a la hora de calcular las tareas que nos daría tiempo a implementar en el último sprint vimos que está no iba a ser posible así que se decidió descartarla.
+
 ![Tabla tareas](/ImagenesMetricas/tablatareasgeneral.PNG)
