@@ -356,5 +356,5 @@ Sprint 3
 ![PH por hacer Sprint3](/ImagenesMetricas/PHporHacer.S3.PNG)
 
 
-
+[Enlace a la hoja de calculo donde están todas las tablas](https://docs.google.com/spreadsheets/d/1VnMfcXeP1flbRmkpSM9CrCRv1NOV5WqoRnXqZ04Hpy0/edit?usp=sharing)
 
