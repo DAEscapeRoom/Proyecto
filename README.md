@@ -327,15 +327,18 @@ General
 ![Valor por hacer general](/ImagenesMetricas/ValorporHacer.General.PNG)
 ![Tabla general](/ImagenesMetricas/Tabla.General.PNG)
 ![Tabla de velocidades](/ImagenesMetricas/Tabla.Valocidades.PNG)
+
 Sprint 1
 
 ![PHhechos Sprint 1](/ImagenesMetricas/PHHechos.S1.PNG)
 ![Ph por hacer sprint 1](/ImagenesMetricas/PHporHacer.S1.PNG)
 ![Tabla sprint 1](/ImagenesMetricas/Tabla.Sprint1.PNG)
+
 Sprint 2
 
 ![PHHechos Sprint2](/ImagenesMetricas/PHHechos.S2.PNG)
 ![PH por hacer Sprint2](/ImagenesMetricas/PHporHacer.S2.PNG)
+
 ![Tabla Sprint2](/ImagenesMetricas/Tabla.Sprint2.PNG)
 
 Sprint 3
