@@ -317,9 +317,9 @@ Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no ha
 
 
 
-##### Métricas
+# Métricas
 
-####General
+##General
 
 ![Tabla general](/ImagenesMetricas/Tabla.General.PNG)
 
@@ -329,9 +329,9 @@ Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no ha
 ![Valor hecho general](/ImagenesMetricas/ValorHecho.General.PNG)
 ![Valor por hacer general](/ImagenesMetricas/ValorporHacer.General.PNG)
 
-####Conclusiones.
+#Conclusiones.
 
-####Relativas al proyecto en general.
+##Relativas al proyecto en general.
 
 A al vista de las gráficas generales podemos ver que el rendimiento del equipo no se ha aproximado al rendimiento óptimo o ideal que se buscaba, pero hay que tener en cuenta que al ser la primera vez que nos enfrentamos a un proyecto trabajando en equipo y que no habíamos trabajado anteriormente los integrantes del equipo en conjunto, es más complicado que las gráficas se acerquen a esa línea ideal, además de que la elección de las tareas por sprint no fueron las mejoras ya que nuestras valoraciones iniciales no fueron realistas hasta que nos pusimos a trabajar.
 
@@ -349,19 +349,19 @@ Debido a los problemas que tuvimos dentro del grupo a al hora de realizar parte 
 En la tabla de velocidades se puede observar que casi todas las tareas acabadas estan en el sprint 3, lo que causa esa gran desviación estandar, esto es debido a que la gran mayoría de las tareas que cogimos eran épicas y por lo tanto no se podían considerar acabadas hasta el último sprint, quizas deberiamos de haberlas separado en diferentes subtareas para cada sprint y que así cada uno tuviera un número similar de tareas acabadas
 
 
-####Sprint 1
+#Sprint 1
 
 ![Tabla sprint 1](/ImagenesMetricas/Tabla.Sprint1.PNG)
 ![PHhechos Sprint 1](/ImagenesMetricas/PHHechos.S1.PNG)
 ![Ph por hacer sprint 1](/ImagenesMetricas/PHporHacer.S1.PNG)
 
-####Conclusiones del 1º Sprint
+##Conclusiones del 1º Sprint
 
 Este primer Sprint dentro de lo que cabe fue en el que más trabajo pudimos realizar y el que aunque la mayoría de tareas escogidas eran épicas, fue en el que tuvimos también que aprender y al que le dedicamos más tiempo, ya que Undum era la primera vez que lo trabajamos y tuvimos que aprender a crear objetos, escenas, situaciones, formas de utilizar los objetos, incluimos imágenes de cabecera y de fondo. Aunque debido a nuestra decisión de dividir los puntos de historia y el valor(El cual se explicará más adelante), parece que es en el que menos tareas se cogieron si es el que más trabajo nos llevó realizarlas ya que como se ha mencionado antes, tuvimos un periodo de aprendizaje para empezar a crear nuestro proyecto.
 
 
 
-####Sprint 2
+#Sprint 2
 
 
 ![Tabla Sprint2](/ImagenesMetricas/Tabla.Sprint2.PNG)
@@ -369,18 +369,18 @@ Este primer Sprint dentro de lo que cabe fue en el que más trabajo pudimos real
 ![PHHechos Sprint2](/ImagenesMetricas/PHHechos.S2.PNG)
 ![PH por hacer Sprint2](/ImagenesMetricas/PHporHacer.S2.PNG)
 
-####Conclusiones Sprint 2
+##Conclusiones Sprint 2
 
 En este sprint quisimos ser ambiciosos y nos salió caro(Leer con acento mexicano). Al inicio de este sprint, además de coger todas las tareas Épicas, decidimos incluir más interacciones con objetos y que estos fuesen más importantes en la historia, esto supuso muchos problemas con estos mismos y más horas perdidas de trabajo solucionando problemas, las cuales se concentraron en los últimos días del sprint ya que, aunque se amplió la fecha de entrega, no fuimos lo suficientemente constantes como para que no se acumulase toda esa carga al final del Sprint. A esto debemos añadirle que empezamos a buscar la forma de hacer accesible a nuestro proyecto de forma online, al principio pensamos que sería fácil, pero hasta el final del sprint no nos dimos cuenta de que seria mucho mas complicado, porque no encontramos servicios Web que aceptasen el proyecto en sí, sin añadirle modificaciones o sin cambiar el código para que lo aceptase, además de que ninguno de los compañeros quería utilizar su ordenador personal para crear hay el servidor con lo que gran parte de las tareas que elegimos relacionadas con la web se quedaron sin hacer.
 
 
-####Sprint 3
+#Sprint 3
 
 ![Tabla Sprint3](/ImagenesMetricas/Tabla.Sprint3.PNG)
 ![PHHechos Sprint3](/ImagenesMetricas/PHHechos.S3.PNG)
 ![PH por hacer Sprint3](/ImagenesMetricas/PHporHacer.S3.PNG)
 
-####Conclusiones Sprint 3
+##Conclusiones Sprint 3
 
 En este Sprint comenzando siendo realistas con el tiempo que disponíamos, ha sido en el que más reuniones se realizaron ya que desde el principio empezamos a plantearnos qué tareas no podíamos realizar por falta de tiempo y de material. Desde el principio y a nuestro pesar decidimos que no realizaríamos las tareas relacionadas con la web, ya que seguíamos sin tener un servidor donde alojar el proyecto, la edición de imágenes a razón de los objetos y el entorno, ya que ninguno disponía de herramientas de edición, ni de tiempo debido a la situación con el confinamiento, ni tampo la banda sonora y el mapa, también por falta de tiempo. Ya que la mayoría de las tareas eran épicas, se acabaron en este sprint, y las tareas que no realizamos se descontaron en este último, ya que en su mayoría estaban relacionadas con la página web y el servidor que no se llegaron a realizar.
 
