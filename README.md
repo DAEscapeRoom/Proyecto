@@ -358,4 +358,4 @@ Sprint 3
 
 [Enlace a la hoja de calculo donde están todas las tablas](https://docs.google.com/spreadsheets/d/1VnMfcXeP1flbRmkpSM9CrCRv1NOV5WqoRnXqZ04Hpy0/edit?usp=sharing)
 
-![Tabla tareas](/ImagenesMetricastablatareasgeneral.PNG)
+![Tabla tareas](/ImagenesMetricas/tablatareasgeneral.PNG)
