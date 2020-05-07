@@ -324,7 +324,7 @@ General
 ![Tabla general](/ImagenesMetricas/Tabla.General.PNG)
 ![Tabla de velocidades](/ImagenesMetricas/Tabla.Valocidades.PNG)
 
-En la tabla de velocidades se puede observar que casi todas las tareas acabadas estan en el sprint 3, esto es debido a que la gran mayoría de las tareas que cogimos eran épicas y por lo tanto no se podían considerar acabadas hasta el último sprint, quizas deberiamos de haberlas separado en diferentes subtareas para cada sprint y que así cada uno tuviera un número similar de tareas acabadas
+En la tabla de velocidades se puede observar que casi todas las tareas acabadas estan en el sprint 3, lo que causa esa gran desviación estandar, esto es debido a que la gran mayoría de las tareas que cogimos eran épicas y por lo tanto no se podían considerar acabadas hasta el último sprint, quizas deberiamos de haberlas separado en diferentes subtareas para cada sprint y que así cada uno tuviera un número similar de tareas acabadas
 
 ![PHHechos General](/ImagenesMetricas/PHHechos.General.PNG)
 ![PH Por hacer general](/ImagenesMetricas/PHporHacer.General.PNG)
