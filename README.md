@@ -323,19 +323,19 @@ Deberiamos de mejorar la comunicación con el grupo, ya que hasta el final no ha
 
 ![Tabla general](/ImagenesMetricas/Tabla.General.PNG)
 
-Burn-up PH hechos proyecto general.
+#### Burn-up PH hechos proyecto general.
 
 ![PHHechos General](/ImagenesMetricas/PHHechos.General.PNG)
 
-Burndown PH por hacer proyecto general.
+#### Burndown PH por hacer proyecto general.
 
 ![PH Por hacer general](/ImagenesMetricas/PHporHacer.General.PNG)
 
-Burn-up Valor hecho proyecto general.
+#### Burn-up Valor hecho proyecto general.
 
 ![Valor hecho general](/ImagenesMetricas/ValorHecho.General.PNG)
 
-Burndown Valor por hacer proyecto general.
+#### Burndown Valor por hacer proyecto general.
 
 ![Valor por hacer general](/ImagenesMetricas/ValorporHacer.General.PNG)
 
@@ -361,15 +361,15 @@ En la tabla de velocidades se puede observar que casi todas las tareas acabadas 
 
 # Sprint 1
 
-PH por día Sprint 1
+#### PH por día Sprint 1
 
 ![Tabla sprint 1](/ImagenesMetricas/Tabla.Sprint1.PNG)
 
-Burn-up PH hechos Sprint 1
+#### Burn-up PH hechos Sprint 1
 
 ![PHhechos Sprint 1](/ImagenesMetricas/PHHechos.S1.PNG)
 
-Burndown PH por hacer Sprint 1
+#### Burndown PH por hacer Sprint 1
 
 ![Ph por hacer sprint 1](/ImagenesMetricas/PHporHacer.S1.PNG)
 
@@ -382,15 +382,15 @@ Este primer Sprint dentro de lo que cabe fue en el que más trabajo pudimos real
 # Sprint 2
 
 
-PH por día Sprint 2
+#### PH por día Sprint 2
 
 ![Tabla Sprint2](/ImagenesMetricas/Tabla.Sprint2.PNG)
 
-Burn-up PH hechos Sprint 2
+#### Burn-up PH hechos Sprint 2
 
 ![PHHechos Sprint2](/ImagenesMetricas/PHHechos.S2.PNG)
 
-Burndown PH por hacer Sprint 2
+#### Burndown PH por hacer Sprint 2
 
 ![PH por hacer Sprint2](/ImagenesMetricas/PHporHacer.S2.PNG)
 
@@ -401,15 +401,15 @@ En este sprint quisimos ser ambiciosos y nos salió caro(Leer con acento mexican
 
 # Sprint 3
 
-PH por día Sprint 3
+#### PH por día Sprint 3
 
 ![Tabla Sprint3](/ImagenesMetricas/Tabla.Sprint3.PNG)
 
-Burn-up PH hechos Sprint 3
+#### Burn-up PH hechos Sprint 3
 
 ![PHHechos Sprint3](/ImagenesMetricas/PHHechos.S3.PNG)
 
-Burndown PH por hacer Sprint 3
+#### Burndown PH por hacer Sprint 3
 
 ![PH por hacer Sprint3](/ImagenesMetricas/PHporHacer.S3.PNG)
 
